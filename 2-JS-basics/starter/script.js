@@ -43,4 +43,26 @@
 
 /* Basic Operators ----------------------------------------------
 -----------------------------------------------------------------
-----------------------------------------------------------------*/ 
+----------------------------------------------------------------*/
+
+//Math Operators
+var now = 2018;
+var ageJohn = 28;
+var ageMark = 33;
+var yearJohn = now - ageJohn;
+var yearMark = now - ageMark;
+console.log(yearJohn);
+
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 2);
+
+//Logical Operators
+
+var johnOlder = ageJohn > ageMark; //boolean variable
+console.log(johnOlder);
+
+// typeof operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof "Hello World");
