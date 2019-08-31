@@ -70,22 +70,36 @@
 /* Operator Precedence -------------------
 ---------------------------------------------------------------------
 -------------------------------------------------------------------- */
-var now = 2019;
-var yearJohn = 1986;
-var fullAge = 18;
+// var now = 2019;
+// var yearJohn = 1986;
+// var fullAge = 18;
 
-var isFullAge = now - yearJohn >= fullAge;
-console.log(isFullAge);
+// var isFullAge = now - yearJohn >= fullAge;
+// console.log(isFullAge);
 
-var ageMark = 35;
-var ageJohn = now - yearJohn;
-var average = (ageMark + ageJohn) / 2;
-console.log(average);
+// var ageMark = 35;
+// var ageJohn = now - yearJohn;
+// var average = (ageMark + ageJohn) / 2;
+// console.log(average);
 
-// More operators
+// // More operators
 
-x = x * 2;
-x *= 2; // Same thing for +, -, /
+// x = x * 2;
+// x *= 2; // Same thing for +, -, /
 
-x += 1;
-x++; // same thing, if we always want to add 1
+// x += 1;
+// x++; // same thing, if we always want to add 1
+
+/* Code Challenge 1 ----------------------
+---------------------------------------------------------------------
+--------------------------------------------------------------------- */
+var massJohn = 70;
+var heightJohn = 1.8;
+var bmiJohn = massJohn / (heightJohn * heightJohn);
+
+var massMark = 80;
+var heightMark = 1.9;
+var bmiMark = massMark / (heightMark * heightMark);
+
+var isMarkBmiMore = bmiMark > bmiJohn;
+console.log("Is Mark's BMI higher than John's?", isMarkBmiMore);
