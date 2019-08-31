@@ -46,23 +46,46 @@
 ----------------------------------------------------------------*/
 
 //Math Operators
-var now = 2018;
-var ageJohn = 28;
-var ageMark = 33;
-var yearJohn = now - ageJohn;
-var yearMark = now - ageMark;
-console.log(yearJohn);
+// var now = 2018;
+// var ageJohn = 28;
+// var ageMark = 33;
+// var yearJohn = now - ageJohn;
+// var yearMark = now - ageMark;
+// console.log(yearJohn);
 
-console.log(now + 2);
-console.log(now * 2);
-console.log(now / 2);
+// console.log(now + 2);
+// console.log(now * 2);
+// console.log(now / 2);
 
-//Logical Operators
+// //Logical Operators
 
-var johnOlder = ageJohn > ageMark; //boolean variable
-console.log(johnOlder);
+// var johnOlder = ageJohn > ageMark; //boolean variable
+// console.log(johnOlder);
 
-// typeof operator
-console.log(typeof johnOlder);
-console.log(typeof ageJohn);
-console.log(typeof "Hello World");
+// // typeof operator
+// console.log(typeof johnOlder);
+// console.log(typeof ageJohn);
+// console.log(typeof "Hello World");
+
+/* Operator Precedence -------------------
+---------------------------------------------------------------------
+-------------------------------------------------------------------- */
+var now = 2019;
+var yearJohn = 1986;
+var fullAge = 18;
+
+var isFullAge = now - yearJohn >= fullAge;
+console.log(isFullAge);
+
+var ageMark = 35;
+var ageJohn = now - yearJohn;
+var average = (ageMark + ageJohn) / 2;
+console.log(average);
+
+// More operators
+
+x = x * 2;
+x *= 2; // Same thing for +, -, /
+
+x += 1;
+x++; // same thing, if we always want to add 1
