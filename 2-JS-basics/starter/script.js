@@ -93,13 +93,38 @@
 /* Code Challenge 1 ----------------------
 ---------------------------------------------------------------------
 --------------------------------------------------------------------- */
-var massJohn = 70;
-var heightJohn = 1.8;
-var bmiJohn = massJohn / (heightJohn * heightJohn);
+// var massJohn = 70;
+// var heightJohn = 1.8;
+// var bmiJohn = massJohn / (heightJohn * heightJohn);
 
-var massMark = 80;
-var heightMark = 1.9;
-var bmiMark = massMark / (heightMark * heightMark);
+// var massMark = 80;
+// var heightMark = 1.9;
+// var bmiMark = massMark / (heightMark * heightMark);
 
-var isMarkBmiMore = bmiMark > bmiJohn;
-console.log("Is Mark's BMI higher than John's?" + " " + isMarkBmiMore);
+// var isMarkBmiMore = bmiMark > bmiJohn;
+// console.log("Is Mark's BMI higher than John's?" + " " + isMarkBmiMore);
+
+/* Code Challenge 2 -------------------
+-----------------------------------------------------------------------
+------------------------------------------------------------------------- */
+
+var johnsTeam = (89 + 120 + 103) / 3;
+var marksTeam = (122 + 94 + 123) / 3;
+var marysTeam = (97 + 137 + 105) / 3;
+console.log("John's team: " + johnsTeam);
+console.log("Mark's team: " + marksTeam);
+console.log("Mary's team: " + marysTeam);
+
+switch (true) {
+  case johnsTeam > marksTeam && johnsTeam > marysTeam:
+    console.log("John's team has the highest average score!");
+    break;
+  case marksTeam > johnsTeam && marksTeam > marysTeam:
+    console.log("Mark's team won!");
+    break;
+  case marysTeam > johnsTeam && marysTeam > marksTeam:
+    console.log("Mary's team won!");
+    break;
+  default:
+    console.log("There is a tie!!");
+}
