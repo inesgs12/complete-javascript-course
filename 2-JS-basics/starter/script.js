@@ -108,23 +108,53 @@
 -----------------------------------------------------------------------
 ------------------------------------------------------------------------- */
 
-var johnsTeam = (89 + 120 + 103) / 3;
-var marksTeam = (122 + 94 + 123) / 3;
-var marysTeam = (97 + 137 + 105) / 3;
-console.log("John's team: " + johnsTeam);
-console.log("Mark's team: " + marksTeam);
-console.log("Mary's team: " + marysTeam);
+// var johnsTeam = (89 + 120 + 103) / 3;
+// var marksTeam = (122 + 94 + 123) / 3;
+// var marysTeam = (97 + 137 + 105) / 3;
+// console.log("John's team: " + johnsTeam);
+// console.log("Mark's team: " + marksTeam);
+// console.log("Mary's team: " + marysTeam);
 
-switch (true) {
-  case johnsTeam > marksTeam && johnsTeam > marysTeam:
-    console.log("John's team has the highest average score!");
-    break;
-  case marksTeam > johnsTeam && marksTeam > marysTeam:
-    console.log("Mark's team won!");
-    break;
-  case marysTeam > johnsTeam && marysTeam > marksTeam:
-    console.log("Mary's team won!");
-    break;
-  default:
-    console.log("There is a tie!!");
+// switch (true) {
+//   case johnsTeam > marksTeam && johnsTeam > marysTeam:
+//     console.log("John's team has the highest average score!");
+//     break;
+//   case marksTeam > johnsTeam && marksTeam > marysTeam:
+//     console.log("Mark's team won!");
+//     break;
+//   case marysTeam > johnsTeam && marysTeam > marksTeam:
+//     console.log("Mary's team won!");
+//     break;
+//   default:
+//     console.log("There is a tie!!");
+// }
+
+/* Code Challenge 3 ------------------------------------------
+------------------------------------------------------------------------------
+--------------------------------------------------------------------------------*/
+
+var bills = [124, 48, 268];
+var totals = [];
+var tips = [];
+
+function calculateTip(bill) {
+  if (bill < 50) {
+    let tip = bill * 0.2;
+    tips.push(tip);
+    totals.push(bill + tip);
+  } else if (bill < 200) {
+    let tip = bill * 0.15;
+    tips.push(tip);
+    totals.push(bill + tip);
+  } else {
+    let tip = bill * 0.1;
+    tips.push(tip);
+    totals.push(bill + tip);
+  }
 }
+
+calculateTip(124);
+calculateTip(48);
+calculateTip(268);
+console.log(tips);
+console.log(totals);
